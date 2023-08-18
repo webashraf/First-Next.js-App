@@ -3,10 +3,11 @@ export const metadata = {
     title: "Contact Info Page",
     description: "Next JS Practice Project",
   };
-const infoPage = () => {
+const infoPage = ({params}) => {
+    console.log(params);
     return (
         <div>
-            Info Page
+            Info Page of {params.info} 
         </div>
     );
 };
