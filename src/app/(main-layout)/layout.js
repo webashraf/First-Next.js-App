@@ -1,17 +1,15 @@
+import Navbar from "@/components/Navbar/Navbar";
 import Link from "next/link";
 
 const layout = ({ children }) => {
   return (
-    <div>
+    <div className="max-w-7xl mx-auto border">
       <div className="flex gap-3 text-blue-900  underline">
-        <Link href={"/"}>Home</Link>
-        <Link href={"/contact"}>Contact</Link>
-        <Link href={"/contact/info"}>Info</Link>
-        <Link href={"/about"}>About</Link>
-        <Link href={"/blogs"}>Blogs</Link>
-        <Link href={"/dashboard"}>Dashboard</Link>
+        <Navbar></Navbar>
       </div>
+      <div className="px-10">
       {children}
+      </div>
       <div>Footer</div>
     </div>
   );
